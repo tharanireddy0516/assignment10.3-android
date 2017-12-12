@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--xml layer starts here
+xml stands for extensible markup language
+it is a background code of layouts,widges etc-->
+<!--Linear layout is one of the types of layout
+It aligns views one by one that is by vertically/horizontally
+layout_width indicates the width of the Linear layout
+layout_Height indicates the height of the Linear layout
+context indicates the package name of the respective java class
+match parent will take complete height or width of text
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tharani.custom_listfragment.MainActivity">
+    <!-- A Fragment represents a behavior or a portion of user interface in an Activity
+     It is a piece of activity which enables more activity design and is a kind of sub activity
+    It has its own behavior,life cycle,layout
+    layout_width indicates the width of the Linear layout
+    layout_Height indicates the height of the Linear layout
+    The name of the class that implement's the application's backup agent, a subclass of BackupAgent
+    tools:layout - This attribute declares which layout you want-->
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.example.tharani.custom_listfragment.Fragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:layout="@layout/row_fragment" />
+
+</LinearLayout><!--Linear Layout ends here-->
